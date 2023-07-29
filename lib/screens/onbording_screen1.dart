@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/onbording_screen3.dart';
+import 'package:gaming_app_ui/constents/constents.dart';
 
-import 'constents.dart';
+import 'package:gaming_app_ui/screens/onbording_screen3.dart';
 
-class OnBordingScreen2 extends StatefulWidget {
-  const OnBordingScreen2({super.key});
+class OnBordingScreen1 extends StatefulWidget {
+  const OnBordingScreen1({super.key});
 
   @override
-  State<OnBordingScreen2> createState() => _OnBordingScreen2State();
+  State<OnBordingScreen1> createState() => _OnBordingScreen1State();
 }
 
-class _OnBordingScreen2State extends State<OnBordingScreen2> {
+class _OnBordingScreen1State extends State<OnBordingScreen1> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,17 +20,17 @@ class _OnBordingScreen2State extends State<OnBordingScreen2> {
           body: Column(
             children: [
               const Padding(
-                padding: EdgeInsets.only(top: 163, left: 44),
+                padding: EdgeInsets.only(top: 164, left: 66),
                 child: Image(
-                  image: AssetImage('images/boy2.png'),
-                  width: 348,
-                  height: 233,
+                  image: AssetImage('images/boy1.png'),
+                  width: 327,
+                  height: 232,
                 ),
               ),
               const Padding(
                 padding: EdgeInsets.only(top: 35),
                 child: Text(
-                  'Schedule Games\n With Friends ',
+                  'Get Paid! Playing\nVideo Game',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 24,
@@ -42,7 +42,7 @@ class _OnBordingScreen2State extends State<OnBordingScreen2> {
               const Padding(
                 padding: EdgeInsets.only(top: 36),
                 child: Text(
-                  'Easily create an upcoming\n event and get ready for battle.\n Yeah! real combat fella.',
+                  'Earn points and real cash when\n you win a battle with no delay\n in cashing out',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 14,
@@ -52,7 +52,7 @@ class _OnBordingScreen2State extends State<OnBordingScreen2> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 73),
+                padding: const EdgeInsets.only(top: 63),
                 child: InkWell(
                   onTap: () {
                     Navigator.push(
@@ -75,11 +75,22 @@ class _OnBordingScreen2State extends State<OnBordingScreen2> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 100.0),
+                padding: const EdgeInsets.only(top: 71.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                    Container(
+                      height: 10,
+                      width: 10,
+                      decoration: const BoxDecoration(
+                        color: themeColor,
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
                     Opacity(
                       opacity: 0.2,
                       child: Container(
@@ -89,17 +100,6 @@ class _OnBordingScreen2State extends State<OnBordingScreen2> {
                           color: themeColor,
                           shape: BoxShape.circle,
                         ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Container(
-                      height: 10,
-                      width: 10,
-                      decoration: const BoxDecoration(
-                        color: themeColor,
-                        shape: BoxShape.circle,
                       ),
                     ),
                     const SizedBox(

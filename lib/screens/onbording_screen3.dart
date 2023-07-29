@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gaming_app_ui/components/button.dart';
 
-import 'constents.dart';
+import '../constents/constents.dart';
+
 
 class OnBordingScreen3 extends StatefulWidget {
   const OnBordingScreen3({super.key});
@@ -55,7 +56,7 @@ class _OnBordingScreen3State extends State<OnBordingScreen3> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 71.0, bottom: 20),
+                padding: const EdgeInsets.only(top: 38.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,

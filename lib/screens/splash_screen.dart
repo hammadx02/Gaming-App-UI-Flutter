@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/onbording_screen1.dart';
 
-import 'constents.dart';
+import '../constents/constents.dart';
+import 'onbording_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => OnBordingScreen1(),
+            builder: (context) => OnBordingScreen(),
           ),
         );
       },

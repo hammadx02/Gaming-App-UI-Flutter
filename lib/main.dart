@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/splash_screen.dart';
+import 'package:gaming_app_ui/screens/splash_screen.dart';
+
+import 'colors/material_color.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +17,13 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: createMaterialColor(
+          Color(0xffFA5075),
+        ),
+      ),
       home: SplashScreen(),
     );
   }

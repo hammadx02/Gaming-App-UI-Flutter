@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/constents.dart';
+import 'package:gaming_app_ui/constents/constents.dart';
 
 class MyButton extends StatelessWidget {
   final String title;
@@ -11,7 +11,9 @@ class MyButton extends StatelessWidget {
       height: 58,
       width: 210,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(100), color: themeColor),
+          
+          borderRadius: BorderRadius.circular(100),
+          color: themeColor),
       child: Center(
         child: Text(
           title,
