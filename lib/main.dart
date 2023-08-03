@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/screens/splash_screen.dart';
+import 'package:gaming_app_ui/screens/widgets/alert_dialogue.dart';
+
+import 'package:gaming_app_ui/verification/verification_screen1.dart';
 
 import 'colors/material_color.dart';
 
@@ -21,10 +23,10 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: createMaterialColor(
-          Color(0xffFA5075),
+          const Color(0xffFA5075),
         ),
       ),
-      home: SplashScreen(),
+      home: const AlertDialogApp(),
     );
   }
 }

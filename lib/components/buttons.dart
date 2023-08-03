@@ -11,14 +11,17 @@ class MyButton extends StatelessWidget {
       height: 58,
       width: 210,
       decoration: BoxDecoration(
-          
-          borderRadius: BorderRadius.circular(100),
-          color: themeColor),
+        borderRadius: BorderRadius.circular(100),
+        color: themeColor,
+      ),
       child: Center(
         child: Text(
           title,
           style: const TextStyle(
-              fontFamily: 'Poppins Bold', fontSize: 14, color: Colors.white),
+            fontFamily: 'Poppins Bold',
+            fontSize: 14,
+            color: Colors.white,
+          ),
         ),
       ),
     );

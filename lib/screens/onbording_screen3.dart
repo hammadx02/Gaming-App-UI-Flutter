@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/components/button.dart';
+import 'package:gaming_app_ui/components/buttons.dart';
 
 import '../constents/constents.dart';
 
@@ -49,7 +49,7 @@ class _OnBordingScreen3State extends State<OnBordingScreen3> {
                   ),
                 ),
               ),
-              const Padding(
+               const Padding(
                 padding: EdgeInsets.only(top: 38.0),
                 child: MyButton(
                   title: 'Let’s Combat!',

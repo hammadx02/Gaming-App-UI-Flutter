@@ -1,9 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:gaming_app_ui/screens/create_account.dart';
+import 'package:gaming_app_ui/screens/onbording_screen.dart';
 
 import '../constents/constents.dart';
-import 'onbording_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -18,12 +19,12 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Timer(
-      const Duration(seconds: 2),
+      const Duration(milliseconds: 3000),
       () {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => OnBordingScreen(),
+            builder: (context) => OnBoarding(),
           ),
         );
       },
