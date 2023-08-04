@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/screens/create_account.dart';
 import 'package:gaming_app_ui/screens/onbording_screen.dart';
 
 import '../constents/constents.dart';
@@ -16,7 +15,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // TODO: implement initState
+ 
     super.initState();
     Timer(
       const Duration(milliseconds: 3000),

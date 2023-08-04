@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/screens/widgets/alert_dialogue.dart';
+import 'package:gaming_app_ui/screens/onbording_screen.dart';
+import 'package:gaming_app_ui/widgets/alert_dialogue.dart';
 
 import 'package:gaming_app_ui/verification/verification_screen1.dart';
 
@@ -26,7 +27,7 @@ class _MyAppState extends State<MyApp> {
           const Color(0xffFA5075),
         ),
       ),
-      home: const AlertDialogApp(),
+      home:  OnBoarding(),
     );
   }
 }

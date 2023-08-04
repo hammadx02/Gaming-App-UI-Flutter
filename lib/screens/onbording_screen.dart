@@ -3,10 +3,11 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../constents/constents.dart';
 
-
 // ignore: must_be_immutable
 class OnBoarding extends StatefulWidget {
-  const OnBoarding({super.key});
+  int currentIndex = 0;
+  
+   OnBoarding({super.key});
 
   @override
   State<OnBoarding> createState() => _OnBoardingState();
@@ -81,13 +82,24 @@ class _OnBoardingState extends State<OnBoarding> {
                         ),
                       ),
                     ),
-                    
+                    Padding(
+                      padding: const EdgeInsets.only(top: 63),
+                      child: const Text(
+                        'Skip',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontFamily: 'Poppins Bold',
+                          color: themeColor,
+                          decoration: TextDecoration.underline,
+                        ),
+                      ),
+                    ),
                   ],
                 );
               },
             ),
           ),
-          
           SmoothPageIndicator(
             controller: pageController, // PageController
             count: onBoardingContent.length,
