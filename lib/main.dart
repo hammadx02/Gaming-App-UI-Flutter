@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gaming_app_ui/screens/onbording_screen.dart';
-import 'package:gaming_app_ui/widgets/alert_dialogue.dart';
 
-import 'package:gaming_app_ui/verification/verification_screen1.dart';
 
 import 'colors/material_color.dart';
 
