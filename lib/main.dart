@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gaming_app_ui/screens/onbording_screen.dart';
+import 'package:gaming_app_ui/verification/verification_screen3.dart';
 
 
 import 'colors/material_color.dart';
@@ -25,7 +26,7 @@ class _MyAppState extends State<MyApp> {
           const Color(0xffFA5075),
         ),
       ),
-      home:  OnBoarding(),
+      home:  VerficationScreen3(),
     );
   }
 }

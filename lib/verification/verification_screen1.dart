@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:gaming_app_ui/components/buttons.dart';
 import 'package:gaming_app_ui/constents/constents.dart';
 
@@ -79,6 +80,7 @@ class _VerficationScreen1State extends State<VerficationScreen1> {
                   child: Padding(
                     padding: EdgeInsets.only(left: 66),
                     child: IntlPhoneField(
+                      inputFormatters: [LengthLimitingTextInputFormatter(5),],
                       pickerDialogStyle: PickerDialogStyle(
                         countryCodeStyle: TextStyle(
                           fontSize: 14,

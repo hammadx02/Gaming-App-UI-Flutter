@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:gaming_app_ui/components/buttons.dart';
 import 'package:gaming_app_ui/components/circular_button.dart';
 import 'package:intl_phone_field/country_picker_dialog.dart';
@@ -106,6 +107,9 @@ class _CreateAccountState extends State<CreateAccount> {
                       child: Padding(
                         padding: EdgeInsets.only(left: 52),
                         child: IntlPhoneField(
+                          inputFormatters: [
+                            LengthLimitingTextInputFormatter(5),
+                          ],
                           pickerDialogStyle: PickerDialogStyle(
                             countryCodeStyle: TextStyle(
                               fontSize: 14,
