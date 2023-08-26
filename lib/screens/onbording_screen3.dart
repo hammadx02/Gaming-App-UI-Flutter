@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gaming_app_ui/components/buttons.dart';
 
-import '../constents/constents.dart';
+import '../constants/colors.dart';
 
 
 class OnBordingScreen3 extends StatefulWidget {

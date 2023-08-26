@@ -5,7 +5,7 @@ import 'package:gaming_app_ui/components/circular_button.dart';
 import 'package:intl_phone_field/country_picker_dialog.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 
-import '../constents/constents.dart';
+import '../constants/colors.dart';
 
 class CreateAccount extends StatefulWidget {
   const CreateAccount({super.key});

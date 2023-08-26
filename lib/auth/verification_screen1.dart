@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gaming_app_ui/components/buttons.dart';
-import 'package:gaming_app_ui/constents/constents.dart';
+import 'package:gaming_app_ui/constants/colors.dart';
 
 import 'package:intl_phone_field/country_picker_dialog.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gaming_app_ui/components/buttons.dart';
-import 'package:gaming_app_ui/constents/constents.dart';
+import 'package:gaming_app_ui/constants/colors.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class VerficationScreen3 extends StatefulWidget {

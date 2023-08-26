@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:gaming_app_ui/screens/onbording_screen.dart';
 
-import '../constents/constents.dart';
+import '../constants/colors.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

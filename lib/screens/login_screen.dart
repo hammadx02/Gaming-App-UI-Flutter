@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gaming_app_ui/components/buttons.dart';
 import 'package:gaming_app_ui/components/circular_button.dart';
 
-import '../constents/constents.dart';
+import '../constants/colors.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

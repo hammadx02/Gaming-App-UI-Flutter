@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../constents/constents.dart';
+import '../constants/colors.dart';
 
 // ignore: must_be_immutable
 class OnBoarding extends StatefulWidget {

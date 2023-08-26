@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/screens/onbording_screen.dart';
-import 'package:gaming_app_ui/verification/verification_screen3.dart';
 
+import 'package:gaming_app_ui/auth/verification_screen4.dart';
 
 import 'colors/material_color.dart';
 
@@ -26,7 +25,7 @@ class _MyAppState extends State<MyApp> {
           const Color(0xffFA5075),
         ),
       ),
-      home:  VerficationScreen3(),
+      home: VerficationScreen4(),
     );
   }
 }

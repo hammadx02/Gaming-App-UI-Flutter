@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-import '../constents/constents.dart';
+import '../constants/colors.dart';
 
 import 'onbording_screen3.dart';
 

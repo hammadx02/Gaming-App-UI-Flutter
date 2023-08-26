@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:gaming_app_ui/constents/constents.dart';
+import 'package:gaming_app_ui/constants/colors.dart';
 
 /// Flutter code sample for [CupertinoAlertDialog].
 
