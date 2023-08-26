@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import '../components/buttons.dart';
 import '../constants/colors.dart';
 
 // ignore: must_be_immutable
 class OnBoarding extends StatefulWidget {
   int currentIndex = 0;
-  
-   OnBoarding({super.key});
+
+  OnBoarding({super.key});
 
   @override
   State<OnBoarding> createState() => _OnBoardingState();
@@ -36,6 +37,7 @@ class _OnBoardingState extends State<OnBoarding> {
   ];
 
   PageController pageController = PageController();
+  bool isLastPage = false;
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +47,9 @@ class _OnBoardingState extends State<OnBoarding> {
           Expanded(
             child: PageView.builder(
               controller: pageController,
+              onPageChanged: (index) {
+                setState(() => isLastPage = index == 2);
+              },
               itemCount: onBoardingContent.length,
               itemBuilder: (context, index) {
                 return Column(
@@ -55,7 +60,7 @@ class _OnBoardingState extends State<OnBoarding> {
                       child: Image.asset(
                         onBoardingContent[index].image,
                         height: 232,
-                        width: 327,
+                        fit: BoxFit.cover,
                       ),
                     ),
                     Padding(
@@ -82,19 +87,29 @@ class _OnBoardingState extends State<OnBoarding> {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 63),
-                      child: const Text(
-                        'Skip',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontFamily: 'Poppins Bold',
-                          color: themeColor,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                    ),
+                    isLastPage
+                        ? Padding(
+                            padding: EdgeInsets.only(top: 38.0),
+                            child: MyButton(
+                              title: 'Let’s Combat!',
+                            ),
+                          )
+                        : Padding(
+                            padding: const EdgeInsets.only(top: 63),
+                            child: TextButton(
+                              child: Text(
+                                'Skip',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  fontFamily: 'Poppins Bold',
+                                  color: themeColor,
+                                  decoration: TextDecoration.underline,
+                                ),
+                              ),
+                              onPressed: () => pageController.jumpToPage(2),
+                            ),
+                          ),
                   ],
                 );
               },

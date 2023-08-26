@@ -15,10 +15,11 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
- 
     super.initState();
     Timer(
-      const Duration(milliseconds: 3000),
+      const Duration(
+        milliseconds: 3000,
+      ),
       () {
         Navigator.push(
           context,
@@ -32,15 +33,17 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
           backgroundColor: themeColor,
           body: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
+              SizedBox(
+                height: 50,
+              ),
               Center(
                 child: Image(
                   image: AssetImage(
@@ -49,6 +52,15 @@ class _SplashScreenState extends State<SplashScreen> {
                   width: 178.91,
                   height: 105.85,
                 ),
+              ),
+              Container(
+                child: Image(
+                  image: AssetImage(
+                    'images/graphics.png',
+                  ),
+                  color: Colors.white,
+                ),
+                width: double.infinity,
               ),
             ],
           ),
