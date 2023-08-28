@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:gaming_app_ui/constants/colors.dart';
 
@@ -9,6 +10,7 @@ class LandingScreen extends StatefulWidget {
 }
 
 class _LandingScreenState extends State<LandingScreen> {
+  int currentPage = 0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -53,46 +55,65 @@ class _LandingScreenState extends State<LandingScreen> {
           ],
         ),
         body: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SizedBox(
-                height: 20,
-              ),
-              ReuseableContainer(
-                title: 'Schedule',
-                description:
-                    'Easily schedule event/games\nthen find like minded players for\nbattle. You up for it?',
-                image: 'images/lc1.png',
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 10),
-                child: ReuseableContainer(
-                  title: 'Statistics',
-                  description:
-                      'All data from previous and\nupcoming games can be found here ',
-                  image: 'images/lc2.png',
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 10),
-                child: ReuseableContainer(
-                  title: 'Discover  Combats',
-                  description:
-                      'Find out what’s new and compete among\nplayers with new\nchallenges and earn cash with\ngame points ',
-                  image: 'images/lc3.png',
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 10),
-                child: ReuseableContainer(
-                  title: 'Message Players',
-                  description:
-                      'Found the profile of a player\nthat interests you? Start a\nconversation',
-                  image: 'images/lc4.png',
-                ),
-              )
-            ],
+          child: ListView.builder(
+            itemCount: 1,
+            itemBuilder: (context, index) {
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: 20,
+                  ),
+                  ReuseableContainer(
+                    title: 'Schedule',
+                    description:
+                        'Easily schedule event/games\nthen find like minded players for\nbattle. You up for it?',
+                    image: 'images/lc1.png',
+                    imageHight: 107,
+                    imageWidth: 112,
+                    containerPadding: EdgeInsets.only(bottom: 19.0, left: 163),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: ReuseableContainer(
+                      title: 'Statistics',
+                      description:
+                          'All data from previous and\nupcoming games can be found here ',
+                      image: 'images/lc2.png',
+                      imageHight: 119,
+                      imageWidth: 125,
+                      containerPadding:
+                          EdgeInsets.only(bottom: 19.0, left: 150),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: ReuseableContainer(
+                      title: 'Discover  Combats',
+                      description:
+                          'Find out what’s new and compete\namong players with new\nchallenges and earn cash with\ngame points ',
+                      image: 'images/lc3.png',
+                      imageHight: 114,
+                      imageWidth: 202,
+                      containerPadding: EdgeInsets.only(bottom: 19.0, left: 80),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: ReuseableContainer(
+                      title: 'Message Players',
+                      description:
+                          'Found the profile of a player\nthat interests you? Start a\nconversation',
+                      image: 'images/lc4.png',
+                      imageHight: 103,
+                      imageWidth: 131,
+                      containerPadding:
+                          EdgeInsets.only(bottom: 19.0, left: 155),
+                    ),
+                  )
+                ],
+              );
+            },
           ),
         ),
       ),
@@ -102,12 +123,16 @@ class _LandingScreenState extends State<LandingScreen> {
 
 class ReuseableContainer extends StatelessWidget {
   final String title, description, image;
+  final imageHight, imageWidth, containerPadding;
 
   const ReuseableContainer({
     super.key,
     required this.title,
     required this.description,
     required this.image,
+    required this.imageHight,
+    required this.imageWidth,
+    this.containerPadding,
   });
 
   @override
@@ -126,12 +151,28 @@ class ReuseableContainer extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.only(left: 24),
+        padding: const EdgeInsets.only(left: 20),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Stack(
               children: [
+                Padding(
+                  padding: containerPadding,
+                  child: Align(
+                    alignment: Alignment.bottomRight,
+                    child: Row(
+                      children: [
+                        Container(
+                          height: imageHight,
+                          width: imageWidth,
+                          child: Image.asset(
+                            image,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -164,16 +205,6 @@ class ReuseableContainer extends StatelessWidget {
                         size: 14,
                       ),
                     ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Image.asset(
-                      image,
-                      height: 132,
-                      width: 130,
-                    )
                   ],
                 ),
               ],
