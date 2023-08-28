@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../components/buttons.dart';
+import '../components/normal_button.dart';
 import '../constants/colors.dart';
 
 // ignore: must_be_immutable
@@ -90,7 +90,7 @@ class _OnBoardingState extends State<OnBoarding> {
                     isLastPage
                         ? Padding(
                             padding: EdgeInsets.only(top: 38.0),
-                            child: MyButton(
+                            child: NormalButton(
                               title: 'Let’s Combat!',
                             ),
                           )

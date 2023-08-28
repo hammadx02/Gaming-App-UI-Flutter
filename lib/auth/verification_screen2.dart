@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gaming_app_ui/auth/verification_screen3.dart';
-import 'package:gaming_app_ui/components/buttons.dart';
+import 'package:gaming_app_ui/components/normal_button.dart';
 import 'package:gaming_app_ui/constants/colors.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
@@ -117,7 +117,7 @@ class _VerficationScreen2State extends State<VerficationScreen2> {
                     builder: AlertDialogGame,
                   );
                 },
-                child: MyButton(title: 'Next'),
+                child: NormalButton(title: 'Next'),
               ),
             ),
           ],

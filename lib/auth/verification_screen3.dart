@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/components/buttons.dart';
+import 'package:gaming_app_ui/components/normal_button.dart';
 import 'package:gaming_app_ui/constants/colors.dart';
 
 class VerficationScreen3 extends StatefulWidget {
@@ -61,7 +61,7 @@ class _VerficationScreen3State extends State<VerficationScreen3> {
               height: 32,
             ),
             Center(
-              child: MyButton(title: 'Let’s Combat!'),
+              child: NormalButton(title: 'Let’s Combat!'),
             ),
           ],
         ),

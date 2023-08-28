@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:gaming_app_ui/components/buttons.dart';
+import 'package:gaming_app_ui/components/normal_button.dart';
 import 'package:gaming_app_ui/constants/colors.dart';
 
 import 'package:intl_phone_field/country_picker_dialog.dart';
@@ -188,7 +188,7 @@ class _VerficationScreen1State extends State<VerficationScreen1> {
               height: 50,
             ),
             Center(
-              child: MyButton(title: 'Next'),
+              child: NormalButton(title: 'Next'),
             ),
           ],
         ),

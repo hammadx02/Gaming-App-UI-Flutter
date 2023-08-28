@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/components/buttons.dart';
+import 'package:gaming_app_ui/components/normal_button.dart';
 import 'package:gaming_app_ui/components/circular_button.dart';
+import 'package:gaming_app_ui/auth/forgot_password.dart';
 
 import '../constants/colors.dart';
 
@@ -114,19 +115,29 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(
                   height: 8,
                 ),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Padding(
                       padding: EdgeInsets.symmetric(
                         horizontal: 52,
                       ),
-                      child: Text(
-                        'Forgot Password?',
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontFamily: 'Poppins Regular',
-                          color: blackColor,
+                      child: TextButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: ((context) => ForgotPasswordScreen()),
+                            ),
+                          );
+                        },
+                        child: Text(
+                          'Forgot Password?',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontFamily: 'Poppins Regular',
+                            color: blackColor,
+                          ),
                         ),
                       ),
                     ),
@@ -136,7 +147,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 55,
                 ),
                 const Center(
-                  child: MyButton(title: 'Let’s Combat!'),
+                  child: NormalButton(title: 'Let’s Combat!'),
                 ),
                 const SizedBox(
                   height: 23,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/components/buttons.dart';
+import 'package:gaming_app_ui/components/normal_button.dart';
 import 'package:gaming_app_ui/constants/colors.dart';
 
 class ForgotPasswordScreen extends StatefulWidget {
@@ -83,7 +83,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               height: 46,
             ),
             Center(
-              child: MyButton(title: 'Recover Password'),
+              child: NormalButton(title: 'Recover Password'),
             ),
           ],
         ),

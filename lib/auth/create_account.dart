@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:gaming_app_ui/components/buttons.dart';
+import 'package:gaming_app_ui/components/normal_button.dart';
 import 'package:gaming_app_ui/components/circular_button.dart';
 import 'package:intl_phone_field/country_picker_dialog.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
@@ -261,7 +261,7 @@ class _CreateAccountState extends State<CreateAccount> {
                   height: 55,
                 ),
                 const Center(
-                  child: MyButton(title: 'Create Account'),
+                  child: NormalButton(title: 'Create Account'),
                 ),
                 const SizedBox(
                   height: 23,
