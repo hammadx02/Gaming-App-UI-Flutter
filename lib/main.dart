@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:gaming_app_ui/auth/verification_screen2.dart';
-import 'package:gaming_app_ui/screens/splash_screen.dart';
+
+import 'package:gaming_app_ui/screens/landing_screen.dart';
+
 import 'colors/material_color.dart';
 
 void main() {
@@ -33,7 +34,7 @@ class _MyAppState extends State<MyApp> {
           const Color(0xffFA5075),
         ),
       ),
-      home: VerficationScreen2(),
+      home: LandingScreen(),
     );
   }
 }
