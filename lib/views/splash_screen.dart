@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:gaming_app_ui/screens/onbording_screen.dart';
+import 'package:gaming_app_ui/views/onbording_screen.dart';
 
 import '../constants/colors.dart';
 
@@ -33,9 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SafeArea(
+    return  SafeArea(
         child: Scaffold(
           backgroundColor: themeColor,
           body: Column(
@@ -65,7 +63,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ],
           ),
         ),
-      ),
+      
     );
   }
 }

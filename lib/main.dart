@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:gaming_app_ui/screens/landing_screen.dart';
+import 'package:gaming_app_ui/views/landing_screen.dart';
 
 import 'colors/material_color.dart';
 

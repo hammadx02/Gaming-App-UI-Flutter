@@ -1,4 +1,3 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:gaming_app_ui/constants/colors.dart';
 
@@ -13,8 +12,7 @@ class _LandingScreenState extends State<LandingScreen> {
   int currentPage = 0;
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.transparent,
@@ -116,8 +114,8 @@ class _LandingScreenState extends State<LandingScreen> {
             },
           ),
         ),
-      ),
-    );
+      );
+    
   }
 }
 

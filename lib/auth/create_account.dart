@@ -17,9 +17,7 @@ class CreateAccount extends StatefulWidget {
 class _CreateAccountState extends State<CreateAccount> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SafeArea(
+    return SafeArea(
         child: Scaffold(
           body: SingleChildScrollView(
             scrollDirection: Axis.vertical,
@@ -328,7 +326,7 @@ class _CreateAccountState extends State<CreateAccount> {
             ),
           ),
         ),
-      ),
+     
     );
   }
 }

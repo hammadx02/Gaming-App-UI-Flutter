@@ -15,9 +15,7 @@ class VerficationScreen2 extends StatefulWidget {
 class _VerficationScreen2State extends State<VerficationScreen2> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
         body: Column(
           children: [
             const SizedBox(
@@ -122,7 +120,7 @@ class _VerficationScreen2State extends State<VerficationScreen2> {
             ),
           ],
         ),
-      ),
+     
     );
   }
 }
