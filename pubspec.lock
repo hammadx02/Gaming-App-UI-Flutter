@@ -9,6 +9,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
+  badges:
+    dependency: "direct main"
+    description:
+      name: badges
+      sha256: a7b6bbd60dce418df0db3058b53f9d083c22cdb5132a052145dc267494df0b84
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.2"
   boolean_selector:
     dependency: transitive
     description:
@@ -41,6 +49,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.17.2"
+  convex_bottom_bar:
+    dependency: "direct main"
+    description:
+      name: convex_bottom_bar
+      sha256: ebf0f3deb1e8e99374d844fee7485d2980ec502dedfaad395c12118477933aef
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.2.0"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -49,14 +65,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.5"
-  curved_navigation_bar:
-    dependency: "direct main"
-    description:
-      name: curved_navigation_bar
-      sha256: ea6412d00c5d83501bbf1cf9d1ac2ff11a20fbaf910c103c95ace7de82910334
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.3"
   fake_async:
     dependency: transitive
     description:
@@ -218,3 +226,4 @@ packages:
     version: "0.1.4-beta"
 sdks:
   dart: ">=3.1.0-185.0.dev <4.0.0"
+  flutter: ">=0.2.5"
