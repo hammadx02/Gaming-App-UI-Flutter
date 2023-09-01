@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:gaming_app_ui/views/side_menu.dart';
+import 'package:gaming_app_ui/views/landing_screen.dart';
 import 'colors/material_color.dart';
 
 void main() {
@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
           const Color(0xffFA5075),
         ),
       ),
-      home: SideMenuScreen(),
+      home: LandingScreen(),
     );
   }
 }

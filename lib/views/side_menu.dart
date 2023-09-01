@@ -130,11 +130,14 @@ class _SideMenuScreenState extends State<SideMenuScreen> {
               title: 'Change App Skin',
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 70, left: 90),
+              padding: const EdgeInsets.only(top: 50, left: 80),
               child: ReuseableRow(
                 rowIcon: 'images/logout.png',
                 title: 'Logout',
               ),
+            ),
+            SizedBox(
+              height: 30,
             ),
           ],
         ),

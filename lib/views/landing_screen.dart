@@ -124,13 +124,59 @@ class _LandingScreenState extends State<LandingScreen> {
         height: 81,
         items: [
           TabItem(
-            icon: Icons.menu,
+            fontFamily: 'Poppins Regular',
+            icon: ImageIcon(
+              AssetImage(
+                'images/statistics.png',
+              ),
+              color: Colors.white,
+              size: 30,
+            ),
             title: 'Statistics',
           ),
-          TabItem(icon: Icons.location_pin, title: 'Discover'),
-          TabItem(icon: Icons.schedule_outlined),
-          TabItem(icon: Icons.chat_outlined, title: 'Chat'),
-          TabItem(icon: Icons.person_2_outlined, title: 'Profile'),
+          TabItem(
+            fontFamily: 'Poppins Regular',
+            icon: ImageIcon(
+              AssetImage(
+                'images/location_pin.png',
+              ),
+              color: Colors.white,
+              size: 30,
+            ),
+            title: 'Discover',
+          ),
+          TabItem(
+            fontFamily: 'Poppins Regular',
+            icon: ImageIcon(
+              AssetImage(
+                'images/schedule.png',
+              ),
+              color: Colors.white,
+              size: 30,
+            ),
+          ),
+          TabItem(
+            fontFamily: 'Poppins Regular',
+            icon: ImageIcon(
+              AssetImage(
+                'images/chat.png',
+              ),
+              color: Colors.white,
+              size: 30,
+            ),
+            title: 'Chat',
+          ),
+          TabItem(
+            fontFamily: 'Poppins Regular',
+            icon: ImageIcon(
+              AssetImage(
+                'images/profile.png',
+              ),
+              color: Colors.white,
+              size: 30,
+            ),
+            title: 'Profile',
+          ),
         ],
       ),
     );
