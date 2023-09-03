@@ -123,6 +123,7 @@ class _LandingScreenState extends State<LandingScreen> {
         backgroundColor: themeColor,
         height: 75,
         cornerRadius: 5,
+        curveSize: 100.11,
         items: [
           TabItem(
             fontFamily: 'Poppins Regular',
