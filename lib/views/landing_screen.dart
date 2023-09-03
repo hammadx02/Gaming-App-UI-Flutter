@@ -116,12 +116,13 @@ class _LandingScreenState extends State<LandingScreen> {
         ),
       ),
       bottomNavigationBar: ConvexAppBar(
-        style: TabStyle.fixedCircle,
+        style: TabStyle.fixed,
         shadowColor: Colors.transparent,
-        backgroundColor: themeColor,
         color: Color(0xffDADADA),
         activeColor: Color(0xffFFFFFF),
-        height: 81,
+        backgroundColor: themeColor,
+        height: 75,
+        cornerRadius: 5,
         items: [
           TabItem(
             fontFamily: 'Poppins Regular',
@@ -129,7 +130,7 @@ class _LandingScreenState extends State<LandingScreen> {
               AssetImage(
                 'images/statistics.png',
               ),
-              color: Colors.white,
+              color: Color(0xffDADADA),
               size: 30,
             ),
             title: 'Statistics',
@@ -140,19 +141,18 @@ class _LandingScreenState extends State<LandingScreen> {
               AssetImage(
                 'images/location_pin.png',
               ),
-              color: Colors.white,
+              color: Color(0xffDADADA),
               size: 30,
             ),
             title: 'Discover',
           ),
           TabItem(
-            fontFamily: 'Poppins Regular',
             icon: ImageIcon(
               AssetImage(
                 'images/schedule.png',
               ),
-              color: Colors.white,
-              size: 30,
+              color: Color(0xffFFFFFF),
+              size: 56,
             ),
           ),
           TabItem(
@@ -161,7 +161,7 @@ class _LandingScreenState extends State<LandingScreen> {
               AssetImage(
                 'images/chat.png',
               ),
-              color: Colors.white,
+              color: Color(0xffDADADA),
               size: 30,
             ),
             title: 'Chat',
@@ -172,7 +172,7 @@ class _LandingScreenState extends State<LandingScreen> {
               AssetImage(
                 'images/profile.png',
               ),
-              color: Colors.white,
+              color: Color(0xffDADADA),
               size: 30,
             ),
             title: 'Profile',
