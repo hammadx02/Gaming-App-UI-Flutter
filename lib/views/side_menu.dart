@@ -146,6 +146,7 @@ class _SideMenuScreenState extends State<SideMenuScreen> {
   }
 }
 
+// ignore: must_be_immutable
 class ReuseableRow extends StatelessWidget {
   String rowIcon;
   String title;
