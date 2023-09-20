@@ -28,10 +28,12 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        
         primarySwatch: createMaterialColor(
           const Color(0xffFA5075),
         ),
       ),
+      
       home: LandingScreen(),
     );
   }
