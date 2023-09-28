@@ -186,7 +186,8 @@ class _LandingScreenState extends State<LandingScreen> {
 
 class ReuseableContainer extends StatelessWidget {
   final String title, description, image;
-  final imageHight, imageWidth, containerPadding;
+  final double imageHight, imageWidth;
+  final containerPadding;
 
   const ReuseableContainer({
     super.key,
